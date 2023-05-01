@@ -25,7 +25,7 @@ public class ContactController {
     }
 
     @GetMapping("/persons/by-name_surname")
-    private String getPersonsByAge(@RequestParam("name")  String name, @RequestParam("surname") String surname) {
+    private String getPersonsByAge(@RequestParam("name") String name, @RequestParam("surname") String surname) {
         return service.getPersonByNameAndSurname(name, surname);
     }
 }
